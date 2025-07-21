@@ -6,7 +6,7 @@ def removeNthFromEnd(head: ListNode | None, n: int) -> ListNode | None:
     cur = head
     for _ in range(n + 1):
         if cur is None and _ == n :
-            return head.next
+            return head.next # type: ignore
         if cur is not None:
             cur = cur.next
         else:
