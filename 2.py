@@ -2,17 +2,6 @@ from ListNodeModule import ListNode, create_list
 
 
 def addTwoNumbers(l1: ListNode | None, l2: ListNode | None) -> ListNode | None:
-    # def reverse(head):
-    #     prev = None
-    #     curr = head
-    
-    #     while curr is not None:
-    #         nextNode = curr.next
-    #         curr.next = prev
-    #         prev = curr
-    #         curr = nextNode
-    
-    #     return prev
         
     result = None
     curr = None

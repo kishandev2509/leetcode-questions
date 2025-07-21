@@ -5,7 +5,15 @@ class ListNode:
         self.next = next
 
     def __repr__(self) -> str:
-        return f"{self.val} -> {repr(self.next)}"
+        result = ""
+        nodes = set()
+        curr = self
+        while curr is not None and curr not in nodes:
+            result+=f"{curr.val}->"
+            nodes.add(curr)
+            curr = curr.next
+        result += "None" if curr is None else "Loop"
+        return result
 
 
 def create_list(listt: list) -> ListNode | None:
