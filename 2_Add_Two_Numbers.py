@@ -1,4 +1,4 @@
-from ListNodeModule import ListNode, create_list
+from ListNodeModule import ListNode, create_linked_list
 
 
 def addTwoNumbers(l1: ListNode | None, l2: ListNode | None) -> ListNode | None:
@@ -35,8 +35,8 @@ def addTwoNumbers(l1: ListNode | None, l2: ListNode | None) -> ListNode | None:
 
 
 def main():
-    l1 = create_list([2,4,3])
-    l2 = create_list([0,0,9])
+    l1 = create_linked_list([2,4,3])
+    l2 = create_linked_list([0,0,9])
     print(addTwoNumbers(l1,l2))
 
 if __name__ == "__main__":

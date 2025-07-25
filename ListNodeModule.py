@@ -16,7 +16,7 @@ class ListNode:
         return result
 
 
-def create_list(listt: list) -> ListNode | None:
+def create_linked_list(listt: list) -> ListNode | None:
     head = None
     temp = head
     for num in listt:

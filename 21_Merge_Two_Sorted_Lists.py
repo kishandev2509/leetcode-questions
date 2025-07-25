@@ -1,4 +1,4 @@
-from ListNodeModule import ListNode, create_list
+from ListNodeModule import ListNode, create_linked_list
         
 def mergeTwoLists(list1: ListNode | None, list2: ListNode | None) -> ListNode | None:
     if list2 is None:
@@ -38,8 +38,8 @@ def mergeTwoLists(list1: ListNode | None, list2: ListNode | None) -> ListNode | 
 
 
 def main():
-    list1 = create_list([2])
-    list2 = create_list([1])
+    list1 = create_linked_list([2])
+    list2 = create_linked_list([1])
     print(mergeTwoLists(list1,list2))
 
 if __name__ == "__main__":

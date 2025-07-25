@@ -1,5 +1,5 @@
 # 83. Remove Duplicates from Sorted List
-from ListNodeModule import ListNode, create_list
+from ListNodeModule import ListNode, create_linked_list
 
 def deleteDuplicates(head: ListNode | None) -> ListNode | None:
     if head is not None:
@@ -22,7 +22,7 @@ def deleteDuplicates(head: ListNode | None) -> ListNode | None:
 def main():
     tests = [[1,1,1],[],[1,1,2],[1,1,2,3,3]]
     for test in tests:
-        print(f"{test} = {deleteDuplicates(create_list(test))}")
+        print(f"{test} = {deleteDuplicates(create_linked_list(test))}")
 
 if __name__ == "__main__":
     main()

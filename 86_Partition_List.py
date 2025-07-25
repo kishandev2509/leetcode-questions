@@ -1,6 +1,6 @@
 # 86. Partition List
 
-from ListNodeModule import ListNode, create_list
+from ListNodeModule import ListNode, create_linked_list
 
 def partition(head: ListNode | None, x: int) -> ListNode | None:
     if head is not None:
@@ -24,7 +24,7 @@ def partition(head: ListNode | None, x: int) -> ListNode | None:
 def main():
     tests = [[[1,4,3,2,5,2],3],[[2,1],2]]
     for test in tests:
-        print(f"{test} = {partition(create_list(test[0]),test[1])}")
+        print(f"{test} = {partition(create_linked_list(test[0]),test[1])}")
 
 if __name__ == "__main__":
     main()

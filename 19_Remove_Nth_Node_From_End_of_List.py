@@ -1,5 +1,5 @@
 # 19. Remove Nth Node From End of List
-from ListNodeModule import ListNode, create_list
+from ListNodeModule import ListNode, create_linked_list
 
 
 def removeNthFromEnd(head: ListNode | None, n: int) -> ListNode | None:
@@ -25,7 +25,7 @@ def removeNthFromEnd(head: ListNode | None, n: int) -> ListNode | None:
 def main():
     tests = [[[1,2],2],[[1], 1], [[1, 2, 3, 4, 5], 2], [[1, 2], 1]]
     for test in tests:
-        print(f"{test} = {removeNthFromEnd(create_list(test[0]), test[1])}")
+        print(f"{test} = {removeNthFromEnd(create_linked_list(test[0]), test[1])}")
 
 
 if __name__ == "__main__":

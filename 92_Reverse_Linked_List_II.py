@@ -1,5 +1,5 @@
 # 92. Reverse Linked List II
-from ListNodeModule import ListNode, create_list
+from ListNodeModule import ListNode, create_linked_list
 
 
 def reverseBetween(head: ListNode | None, left: int, right: int) -> ListNode | None:
@@ -32,7 +32,7 @@ def reverseBetween(head: ListNode | None, left: int, right: int) -> ListNode | N
 def main():
     tests = [[[3,5],1,2],[[1, 2, 3, 4, 5], 2, 4], [[5], 1, 1]]
     for test in tests:
-        print(f"{test} = {reverseBetween(create_list(test[0]), test[1], test[2])}")
+        print(f"{test} = {reverseBetween(create_linked_list(test[0]), test[1], test[2])}")
 
 
 if __name__ == "__main__":
