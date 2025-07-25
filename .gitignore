@@ -204,3 +204,7 @@ __marimo__/
 
 # Zed
 .zed/
+
+
+# not solved questions
+ns_*
